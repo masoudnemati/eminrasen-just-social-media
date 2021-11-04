@@ -36,7 +36,7 @@ const Hero = () => {
                 <span></span>
                 <span className="instagram">
                   <svg
-                    fill="#ffffff"
+                    fill="rgba(255, 255, 255, 0.5)"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 30 30"
                     width="40px"
@@ -59,7 +59,7 @@ const Hero = () => {
                 <span></span>
                 <span className="discord">
                   <svg
-                    fill="#ffffff"
+                    fill="rgba(255, 255, 255, 0.5)"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 50 50"
                     width="40px"
@@ -82,7 +82,7 @@ const Hero = () => {
                 <span></span>
                 <span className="twitter">
                   <svg
-                    fill="#ffffff"
+                    fill="rgba(255, 255, 255, 0.5)"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 50 50"
                     width="40px"
@@ -105,7 +105,7 @@ const Hero = () => {
                 <span></span>
                 <span className="youtube">
                   <svg
-                    fill="#ffffff"
+                    fill="rgba(255, 255, 255, 0.5)"
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 30 30"
                     width="40px"
@@ -296,10 +296,14 @@ const Hero = () => {
           animation: gradient 10s ease infinite;
         }
         li:nth-of-type(2):hover span {
+          fill: red;
           background-color: #9b84ee;
           background-image: linear-gradient(270deg, #202225, #3b5998);
           background-size: 400% 400%;
           animation: gradient 6s ease infinite;
+        }
+        li:hover svg {
+          fill: white;
         }
         li:nth-of-type(3):hover span {
           background-color: #0077f2;
@@ -328,24 +332,41 @@ const Hero = () => {
         @media only screen and (max-width: 1295px) {
           main {
             background-image: url("/images/top-left-lines.svg");
+            padding: 0;
+            margin: 0;
+          }
+          .left {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+          }
+
+          h1 {
+            width: 100%;
           }
 
           ul {
-            width: 67vw;
+            width: 70vw;
+            height: 300px;
             transform-style: flat;
             transform: rotate(0deg) skew(2deg);
             padding: 0;
-            height: 100px;
-            margin-top: -230px;
+            flex-direction: row;
+            flex-wrap: wrap;
           }
-        }
-        @media only screen and (max-width: 1295px) {
           .join {
-            margin-top: 0;
-            height: 50px;
+            margin-top: 2rem;
+            height: auto;
             background-image: none;
+            padding: 0;
+          }
+
+          ul li {
+            margin-bottom: 2rem;
+            width: 40%;
           }
         }
+
         /* fixing z-index myself */
         .instagram {
           z-index: 5000;
