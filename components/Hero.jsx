@@ -49,7 +49,7 @@ const Hero = () => {
             </li>
             <li>
               <a
-                href="https://www.tiktok.com/@eminrasen93?is_copy_url=1&is_from_webapp=v1&lang=tr-TR"
+                href="https://www.tiktok.com/@emin_rasen"
                 target="_blank"
                 rel="noopener noreferrer"
               >
