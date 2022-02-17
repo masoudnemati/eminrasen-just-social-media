@@ -95,7 +95,7 @@ const Footer = () => {
         }
 
         a:hover div p span {
-          display: none;
+          opacity: 0;
         }
 
         .b10_tveffect:hover div:nth-child(1) {
