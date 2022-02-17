@@ -26,7 +26,7 @@ const Hero = () => {
           <ul>
             <li>
               <a
-                href="https://www.instagram.com/amin_rasen/"
+                href="https://www.instagram.com/emin_rasen_official/
                 target="_blank"
                 rel="noopener noreferrer"
               >
